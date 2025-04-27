@@ -26,7 +26,6 @@ public class DataGenerator {
 
     private static final Faker faker = new Faker(new Locale("en"));
 
-    //Метод, который отправляет запрос без привязки к чему-либо
     private static void sendRequest(RegistrationDto user) {
         given()
                 .spec(requestSpec)
@@ -63,8 +62,6 @@ public class DataGenerator {
         }
     }
 
-    // Это дата-класс, который повторяет структуру JSON, который
-    // должен быть отправлен на сервер
     @Value
     public static class RegistrationDto {
         String login;
