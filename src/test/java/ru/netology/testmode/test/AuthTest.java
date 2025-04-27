@@ -16,8 +16,9 @@ public class AuthTest {
 
     @BeforeEach
     void setup() {
-        open("http://localhost:7777/");
+        open("http://localhost:7777");
     }
+
 
     @Test
     @DisplayName("Should successfully login with active registered user")
